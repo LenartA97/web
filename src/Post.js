@@ -1,12 +1,18 @@
-export default function Post() {
+import { Link } from "react-router-dom";
+
+export default function Post({_id,title,summary,cover,content}) {
     return (
         <div className="post">
-        <div className="image">
-          <img src="https://image.api.playstation.com/vulcan/ap/rnd/202009/2814/GGyEnCkIXoyiVlN9sRHkzUPo.png" alt=""/>
-        </div>
+          <div className="image">
+            <Link to={`/post/${_id}`}>
+              <img src={'http://localhost:4000/'+cover} alt=""/>
+            </Link>
+          </div>
         <div className="texts">
-          <h2>DOOM 2016</h2>
-          <p>You’ve come here for a reason. The Union Aerospace Corporation’s massive research facility on Mars is overwhelmed by fierce and powerful demons, and only one person stands between their world and ours. As the lone DOOM Marine, you’ve been activated to do one thing – kill them all.</p>
+          <Link to={`/post/${_id}`}>
+          <h2>{title}</h2>
+          </Link>
+          <p className="summary">{summary}</p>
         </div>
       </div>
     )
