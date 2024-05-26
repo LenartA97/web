@@ -26,7 +26,7 @@ const username = userInfo?.username;
 
     return(
         <header>
-        <Link to="/" className="logo">Játék Napló</Link>
+        <Link to="/" className="logo">Gamer's Journal</Link>
         <nav>
           {username && (
             <>

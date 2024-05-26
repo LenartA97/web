@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 export default function Post({_id,title,summary,cover,content}) {
+
+
     return (
         <div className="post">
           <div className="image">
