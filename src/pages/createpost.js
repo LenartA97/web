@@ -49,7 +49,7 @@ export default function CreatePost() {
             <input type= "title" placeholder={"Játék címe"} value = {title} onChange={ev => setTitle(ev.target.value)}/>
             <input type="summary" placeholder = {"Játék leírása"} value={summary} onChange = {ev => setSummary(ev.target.value)}/>
             <input type="file"  onChange={ev => setFiles(ev.target.files)}/>
-            <ReactQuill value = {content} onChange={newValue => setContent(newValue)} module={modules} formats = {formats}/>
+            <ReactQuill value = {content} onChange={newValue => setContent(newValue)} modules={modules} formats = {formats}/>
             <button style ={{marginTop: '15px'}}> Feltöltés</button>
 
         </form>

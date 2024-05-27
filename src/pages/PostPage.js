@@ -36,7 +36,9 @@ export default function PostPage() {
     return (
         <div className="post-page">
             <h1>{postInfo.title}</h1>
+            <div className="delete-row">
             <button className="deleteButton" onClick={deletePost}>Törlés</button>
+            </div>
             <div className="image">
                 <img src={`http://localhost:4000/${postInfo.cover}`} alt=''/>
             </div>

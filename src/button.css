@@ -1,7 +1,7 @@
 
 
 .deleteButton {
-    display: inline-block; /* Csak olyan széles lesz, mint a szöveg */
+    display: inline-block; 
     padding: 10px 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -11,6 +11,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .deleteButton:hover {

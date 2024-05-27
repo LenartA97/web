@@ -8,7 +8,9 @@
 body{
   background-image: url("../public/bg2.jpg");
 }
-
+a{
+  cursor: pointer;
+}
 img{
   max-width: 100%;
 }
@@ -82,6 +84,7 @@ button{
   color: #fff;
   border-radius: 5px;
   padding: 7px 0px;
+  cursor: pointer;
 }
 form.login h1, form.register h1{
   text-align: center;
@@ -111,4 +114,8 @@ div.post-page a{
 div.post-page h1{
   text-align: center;
   font-size: 400%;
+}
+
+div.delete-row{
+  text-align: center;
 }
